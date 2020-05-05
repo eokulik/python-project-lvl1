@@ -1,8 +1,10 @@
-#!/usr/bin/env python3
+
+"""CLI app."""
 
 import prompt
 
 
 def welcome_user():
-    name = prompt.string("May I have your name? ")
-    print("Hello, {}!".format(name))
+    """Prompts user name and greets."""
+    name = prompt.string('May I have your name? ')
+    print("Hello, {}!".format(name)) # NOQA WPS421

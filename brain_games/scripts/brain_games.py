@@ -1,10 +1,12 @@
-#!/usr/bin/env python3
+
+"""Brain games application."""
 
 from brain_games.cli import welcome_user
 
 
 def main():
-    print("Welcome to the Brain Games!")
+    """Call to necessary functions."""
+    print('Welcome to the Brain Games!') # NOQA WPS421
     welcome_user()
 
 
