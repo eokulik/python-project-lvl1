@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "eokulik_brain_games"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
-authors = ["eokulik <eugene.okulik@captiv8.io>"]
+authors = ["Your Name <you@example.com>"]
 packages = [
   { include = "brain_games" },
 ]
 
 [tool.poetry.dependencies]
-python = "^2.7"
+python = "^3.6"
 
 [tool.poetry.dev-dependencies]
 
