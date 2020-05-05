@@ -7,7 +7,7 @@ python:
 
 before_install:
   # make depends on poetry
-  - pip install poetry
+  - pip3 install poetry
 
 install:
   - make install
