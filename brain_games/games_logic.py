@@ -28,6 +28,8 @@ def game_rules(name):
         )
     elif name == 'brain-calc':
         return 'What is the result of the expression?\n'
+    elif name == 'brain-gcd':
+        return 'Find the greatest common divisor of given numbers.\n'
 
 
 def brain_games(username, conditions):
