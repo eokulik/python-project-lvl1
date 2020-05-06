@@ -26,9 +26,11 @@ def game_rules(name):
             bold=Style.BRIGHT,
             reset=Style.RESET_ALL,
         )
+    elif name == 'brain-calc':
+        return 'What is the result of the expression?\n'
 
 
-def brain_even(username, conditions):
+def brain_games(username, conditions):
     """
     Logic of brain-even game.
 
