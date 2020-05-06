@@ -36,9 +36,8 @@ six = ">=1.10.0"
 stevedore = ">=1.20.0"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "Cross-platform colored terminal text."
-marker = "platform_system == \"Windows\""
 name = "colorama"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
@@ -512,7 +511,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "307ceb17e85b92f324a9646f81b6558f032b970a109f1bbf5993a989a7b1a579"
+content-hash = "9264899075991a2ffdc0d8d20373cfa85e620543db0550f991c43a71bd18375b"
 python-versions = "^3.6"
 
 [metadata.files]
