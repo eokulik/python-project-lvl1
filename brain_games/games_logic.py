@@ -1,7 +1,5 @@
 """Logic for the brain games."""
 
-from random import randint
-
 import prompt
 from colorama import Fore as Color
 from colorama import Style
@@ -30,19 +28,22 @@ def game_rules(name):
         )
 
 
-def brain_even(username):
+def brain_even(username, conditions):
     """
     Logic of brain-even game.
 
     Parameters:
         username (str): username
+        conditions (tuple): n pairs with (question, correct), n = game rounds
+
+    Returns:
+        return (bool): True if all answers were correct, False if
+        user made error
     """
-    i = 1  # NOQA WPS111
-    while i in range(1, 4):
-        number = randint(1, 100)  # NOQA S311
-        print("Question: {0}".format(number))  # NOQA WPS421
+    for lap in conditions:
+        question, correct = lap
+        print("Question: {0}".format(question))  # NOQA WPS421
         answer = prompt.string('Your answer: {0}'.format(Color.BLUE))
-        correct = 'yes' if number % 2 == 0 else 'no'
         if answer == correct:
             print('{0}Correct!'.format(Style.RESET_ALL))  # NOQA WPS421
         else:
@@ -61,7 +62,6 @@ def brain_even(username):
                 name=username,
             ))
             print(text)  # NOQA WPS421
-            i = 1  # NOQA WPS111
-            continue
-        i += 1  # NOQA WPS111
+            return False
     print('Congratulations, {}!'.format(username))  # NOQA WPS421
+    return True
