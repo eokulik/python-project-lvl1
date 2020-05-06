@@ -1,5 +1,5 @@
 """Generation of questions and correct answers for brain-gcd game."""
-from random import choice, randint
+from random import randint
 
 from brain_games.games_logic import brain_games
 
@@ -14,7 +14,10 @@ def main(username):
     conditions = ()
     while len(conditions) < 3:
         numbers = (randint(1, 100), randint(1, 100))  # NOQA S311
-        question = '{0} {1}'.format(str(numbers[0]), str(numbers[1]))
+        question = '{0} {1}'.format(
+            str(numbers[0]),
+            str(numbers[1]),
+        )
         conditions += ((question, str(calculate_answer(numbers))),)
     brain_games(username, conditions)
 
