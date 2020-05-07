@@ -5,36 +5,6 @@ from colorama import Fore as Color
 from colorama import Style
 
 
-def game_rules(name):
-    """
-    Return rules for the game.
-
-    Parameters:
-        name (str): the name of the game
-
-    Returns:
-        return (str): with game rules
-    """
-    if name == 'brain-even':
-        text = (
-            'Answer {red}"yes"{reset} {bold}if{reset} number even otherwise' +
-            ' answer {red}"no"{reset}{blue}.{reset}\n'
-        )
-        return text.format(
-            red=Color.RED,
-            blue=Color.BLUE,
-            bold=Style.BRIGHT,
-            reset=Style.RESET_ALL,
-        )
-    elif name == 'brain-calc':
-        return 'What is the result of the expression?\n'
-    elif name == 'brain-gcd':
-        return 'Find the greatest common divisor of given numbers.\n'
-    elif name == 'brain-progression':
-        text = 'What number is missing {bold}in{reset} the progression?\n'
-        return text.format(bold=Style.BRIGHT, reset=Style.RESET_ALL)
-
-
 def brain_games(username, conditions):
     """
     Logic of brain-even game.

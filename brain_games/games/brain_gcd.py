@@ -40,3 +40,6 @@ def calculate_answer(numbers):
         else:
             divider -= 1
     return divider
+
+
+game_rules = 'Find the greatest common divisor of given numbers.\n'

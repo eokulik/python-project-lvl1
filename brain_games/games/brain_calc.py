@@ -43,3 +43,6 @@ def count_operation(numbers, sign):
         return sub(numbers[0], numbers[1])
     elif sign == '*':
         return mul(numbers[0], numbers[1])
+
+
+game_rules = 'What is the result of the expression?\n'

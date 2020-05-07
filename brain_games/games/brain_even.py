@@ -1,6 +1,9 @@
 """Generation of questions and correct answers for brain-even game."""
 from random import randint
 
+from colorama import Fore as Color
+from colorama import Style
+
 from brain_games.games_logic import brain_games
 
 
@@ -19,3 +22,15 @@ def main(username):
             answer = 'yes' if number % 2 == 0 else 'no'
             conditions += ((number, answer),)
         game_result = brain_games(username, conditions)
+
+
+game_rules_text = (
+    'Answer {red}"yes"{reset} {bold}if{reset} number even otherwise answer ' +
+    '{red}"no"{reset}{blue}.{reset}\n'
+)
+game_rules = game_rules_text.format(
+    red=Color.RED,
+    blue=Color.BLUE,
+    bold=Style.BRIGHT,
+    reset=Style.RESET_ALL,
+)

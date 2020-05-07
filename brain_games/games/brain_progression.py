@@ -1,6 +1,8 @@
 """Generation of questions and correct answers for brain-gcd game."""
 from random import randint
 
+from colorama import Style
+
 from brain_games.games_logic import brain_games
 
 
@@ -56,3 +58,9 @@ def conditions_string(number, progression, hidden_position):
         number += progression
         i += 1  # NOQA WPS111
     return ((numbers_line, answer),)
+
+
+game_rules = (
+    'What number is missing {bold}in{reset} the progression?\n'.
+    format(bold=Style.BRIGHT, reset=Style.RESET_ALL)
+)
