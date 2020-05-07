@@ -30,6 +30,9 @@ def game_rules(name):
         return 'What is the result of the expression?\n'
     elif name == 'brain-gcd':
         return 'Find the greatest common divisor of given numbers.\n'
+    elif name == 'brain-progression':
+        text = 'What number is missing {bold}in{reset} the progression?\n'
+        return text.format(bold=Style.BRIGHT, reset=Style.RESET_ALL)
 
 
 def brain_games(username, conditions):
