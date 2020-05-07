@@ -5,6 +5,6 @@ from brain_games.scripts import brain_games
 
 def main():
     """Step by step game run."""
-    rules = brain_prime.game_rules
+    rules = brain_prime.GAME_RULES
     username = (brain_games.main(rules))
     brain_prime.main(username)

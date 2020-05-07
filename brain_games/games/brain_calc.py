@@ -45,4 +45,4 @@ def count_operation(numbers, sign):
         return mul(numbers[0], numbers[1])
 
 
-game_rules = 'What is the result of the expression?\n'
+GAME_RULES = 'What is the result of the expression?\n'

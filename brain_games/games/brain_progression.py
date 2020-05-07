@@ -60,7 +60,7 @@ def conditions_string(number, progression, hidden_position):
     return ((numbers_line, answer),)
 
 
-game_rules = (
+GAME_RULES = (
     'What number is missing {bold}in{reset} the progression?\n'.
     format(bold=Style.BRIGHT, reset=Style.RESET_ALL)
 )

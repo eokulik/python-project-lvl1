@@ -38,4 +38,4 @@ def is_prime(number):
     return no_remainder_count == 2
 
 
-game_rules = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
+GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'

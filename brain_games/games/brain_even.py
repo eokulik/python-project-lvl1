@@ -24,11 +24,11 @@ def main(username):
         game_result = brain_games(username, conditions)
 
 
-game_rules_text = (
+GAME_RULES_TEXT = (
     'Answer {red}"yes"{reset} {bold}if{reset} number even otherwise answer ' +
     '{red}"no"{reset}{blue}.{reset}\n'
 )
-game_rules = game_rules_text.format(
+GAME_RULES = GAME_RULES_TEXT.format(
     red=Color.RED,
     blue=Color.BLUE,
     bold=Style.BRIGHT,

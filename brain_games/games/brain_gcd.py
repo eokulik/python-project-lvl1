@@ -42,4 +42,4 @@ def calculate_answer(numbers):
     return divider
 
 
-game_rules = 'Find the greatest common divisor of given numbers.\n'
+GAME_RULES = 'Find the greatest common divisor of given numbers.\n'
