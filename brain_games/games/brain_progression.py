@@ -44,19 +44,17 @@ def conditions_string(number, progression, hidden_position):
     Returns:
         return (tuple): (question, correct_answer)
     """
-    i = 1  # NOQA WPS111
-    numbers_line = ''
+    numbers_line = ()
     answer = ''
-    while i <= 10:
-        if i != 0:
-            numbers_line += ' '  # NOQA WPS336
-        if i == hidden_position:
-            numbers_line += '..'  # NOQA WPS336
+    for count in range(QUESTION_LEN):
+        if count == hidden_position:
+            numbers_line += ('..',)
             answer = str(number)
         else:
-            numbers_line += str(number)
+            numbers_line += (str(number),)
         number += progression
-        i += 1  # NOQA WPS111
+        count += 1
+    numbers_line = ' '.join(numbers_line)
     return ((numbers_line, answer),)
 
 
@@ -64,3 +62,5 @@ GAME_RULES = (
     'What number is missing {bold}in{reset} the progression?\n'.
     format(bold=Style.BRIGHT, reset=Style.RESET_ALL)
 )
+
+QUESTION_LEN = 11
