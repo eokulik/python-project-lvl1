@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "eokulik_brain_games"
-version = "0.1.8"
+version = "0.1.9"
 description = "Console brain games"
 authors = ["Eugeny Okulik <tiburon854@gmail.com>"]
 repository = "https://github.com/eokulik/python-project-lvl1"
