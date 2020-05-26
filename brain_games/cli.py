@@ -12,5 +12,5 @@ def welcome_user():
         return (str): username
     """
     name = prompt.string('May I have your name? ')
-    print("Hello, {}!".format(name)) # NOQA WPS421
+    print('Hello, {0}!'.format(name))
     return name
