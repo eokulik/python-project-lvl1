@@ -21,6 +21,17 @@ def generate_conditions():
 
 
 def gcd(num1, num2):
+    """
+    Generate GCD for given numbers.
+
+    Parameters:
+         num1 (int): first number
+         num2 (int): second number
+
+    Returns:
+        (int): GCD
+
+    """
     while num2:
         num1, num2 = num2, num1 % num2
     return num1

@@ -8,16 +8,16 @@ from brain_games.cli import welcome_user
 
 ROUNDS_COUNT = 3
 WRONG_ANSWER = (
-                "{reset}{red}'{{answer}}'{reset} is wrong answer "
-                + '{bold};({reset}{blue}.{reset} Correct answer was {red}'
-                + "'{{correct}}'{reset}{blue}.{reset}"
-                + "Let{red}'s try again, {{name}}!{reset}"
-            ).format(
-                red=Color.RED,
-                blue=Color.BLUE,
-                bold=Style.BRIGHT,
-                reset=Style.RESET_ALL,
-            )
+    "{reset}{red}'{{answer}}'{reset} is wrong answer "
+    + '{bold};({reset}{blue}.{reset} Correct answer was {red}'
+    + "'{{correct}}'{reset}{blue}.{reset}"
+    + "Let{red}'s try again, {{name}}!{reset}"
+).format(
+    red=Color.RED,
+    blue=Color.BLUE,
+    bold=Style.BRIGHT,
+    reset=Style.RESET_ALL,
+)
 CORRECT_ANSWER = 'Correct!'
 
 
